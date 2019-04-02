@@ -33,6 +33,38 @@
   margin-top: 35px;
   line-height: 1.6;
 }
+/* Style text */
+.titre{
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* pour styler les flexboxes Logiciels */
+.flex-container-logiciels {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-container-logiciels > div {
+  margin: 10px;
+  text-align: center;
+  font-size: 16px;
+  padding: 2px;
+  border: 1px solid #cccccc;
+  background-color: #f1f1f1;
+}
+
+/* pour styler les flexboxes Langues */
+.flex-container-langues {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container-langues > div {
+  margin: 10px;
+  text-align: center;
+  font-size: 16px;
+  padding: 2px;
+}
 
   /* pour responsive navbar */
    /* Add a black background color to the top navigation */
@@ -73,14 +105,15 @@
 .photo{
   box-shadow: 7px 7px 5px 0px;
   border-radius: 30px 30px 30px 30px;
+  width: 90%;
 }
 
 /* img-responsive */
 @media all and (max-width: 1024px){
   .photo{
-    box-shadow: 7px 7px 5px 0px;
-    border-radius: 30px 30px 30px 30px;
-    max-width: 50%;
-    margin-left: 10%;
+    width: 100px;
+    height: 125px;
+    justify-content: center;
+    align-self: center;
   }
 }
